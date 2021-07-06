@@ -1,0 +1,106 @@
+body{
+    background-color: rgb(214, 214, 214);
+}
+
+body.dark{
+  background-color: #000000;
+}
+.container{
+    width: 250px;
+    height: 400px;
+    margin: 80px auto;
+    border-radius: 10px;
+    background-color: rgb(214, 214, 214);
+    box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #ffffff;
+
+}
+body.dark .container{
+  background-color: black;
+  box-shadow: rgb(0 0 0) 5px 5px 10px, rgb(141 128 128) -5px -5px 10px;
+}
+.cal-box{
+    width: 200px;
+    margin: 20px auto;
+}
+
+#display{
+    border: none;
+    outline: none;
+    color: black;
+    text-align: right;
+    font-weight: 600;
+    margin: 30px 0 20px 0;
+    padding: 15px;
+    background: transparent;
+    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff;
+}
+body.dark #display{
+  background: white;
+}
+
+.button{
+    margin: 15px 0 0 5px;
+    outline: none;
+    border: none;
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    background: rgb(214, 214, 214);
+    box-shadow: 5px 5px 10px #b6acac, -5px -5px 10px #faf4f4;
+    display: inline-block;
+}
+body.dark .button{
+  box-shadow: none;
+  background: white;
+}
+
+.button:active{
+    box-shadow: inset 1px 1px 2px #babeec, inset -1px -1px 2px #ffffff;
+
+}
+.clear-button{
+    background-color: red;
+    color: white;
+}
+body.dark .clear-button{
+  background: red;
+}
+.math-button{
+    background-color: black;
+    color: white;
+}
+body.dark .math-button{
+  background: green;
+}
+
+.toggleClass{
+  position: absolute;
+  top: 30px;
+  right: 150px;
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  border-radius: 50%;
+  background: #0d0d0e;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.toggleClass:before{
+  position: absolute;
+  content: 'Dark Mode';
+  white-space: nowrap;
+  left: 25px;
+}
+
+body.dark .toggleClass{
+  color: white;
+  background: white;
+}
+
+body.dark .toggleClass:before{
+  content: 'Light Mode';
+}
