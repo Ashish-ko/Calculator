@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator | by Ashsih</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
 </head>
-
 
 
 <body>
@@ -17,8 +15,13 @@
 
         <div class="cal-box">
             <form name="calculator">
+
+                <!-- Taken for Display the output of Calculator -->
                 <input id="display" type=" text" name="display" placeholder="0" readonly>
                 <br>
+
+                <!-- Created all buttons used in Calculator -->
+
                 <input class="button" type="button" value="7" onclick="calculator.display.value +='7'">
                 <input class="button" type="button" value="8" onclick="calculator.display.value +='8'">
                 <input class="button" type="button" value="9" onclick="calculator.display.value +='9'">
@@ -48,12 +51,9 @@
 
     </div>
 
-    <script type="text/javascript">
-        function toggleClass() {
-            const body = document.querySelector('body');
-            body.classList.toggle('dark');
-        }
-    </script>
+    <!-- Additional JavaScript file for Dark and Light Mode Switch-->
+
+    <script src="script.js"></script>
 
 </body>
 

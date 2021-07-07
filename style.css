@@ -16,7 +16,7 @@ body.dark{
 }
 body.dark .container{
   background-color: black;
-  box-shadow: rgb(0 0 0) 5px 5px 10px, rgb(141 128 128) -5px -5px 10px;
+  box-shadow: rgb(130 130 130) 5px 5px 10px, rgb(141 128 128) -5px -5px 10px;
 }
 .cal-box{
     width: 200px;
@@ -73,7 +73,7 @@ body.dark .clear-button{
     color: white;
 }
 body.dark .math-button{
-  background: green;
+  background: #006f22;
 }
 
 .toggleClass{
